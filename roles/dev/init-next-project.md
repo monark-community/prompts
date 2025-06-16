@@ -1,6 +1,6 @@
 # Initialize Next Project
 
-Let's create a new Next.js project named {{project_name}} following the standard Monark structure.
+Let's create a new Next.js project named $NAME following the standard Monark structure.
 
 1. Run the project initialization command;
 
