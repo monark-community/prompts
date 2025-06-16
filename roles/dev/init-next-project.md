@@ -1,6 +1,8 @@
 # Initialize Next Project
 
-This project uses the latest Next.js 15 features and best practices. Please base all code on a project scaffolded with the following command:
+Let's create a new Next.js project named {{project_name}} following the standard Monark structure.
+
+1. Run the project initialization command;
 
 ```bash
 npx create-next-app@latest [project-name] --yes
@@ -8,29 +10,21 @@ npx create-next-app@latest [project-name] --yes
 
 This sets up the project with TypeScript, ESLint, Tailwind CSS, and App Router—all of which are required.
 
-## 🔧 Tech Stack
+2. Install SASS
 
-- Framework: Next.js 15 (App Router)
-- Language: TypeScript
-- Styling: Tailwind CSS
-- UI Library: shadcn/ui
-- Architecture: SaaS-oriented
-- Linting: ESLint
-- Secrets: All sensitive data must go in .env files and be accessed via process.env
+```bash
+npm i sass
+```
 
-## Guidelines
+3. Initialize shadcn-ui and install some common components.
 
-- ✅ Use Tailwind utility classes for styling
-- ✅ Use shadcn/ui for UI components
-- ✅ Store all secrets and configs in .env (never hardcode)
-- ✅ Structure files clearly: app/, components/, lib/, hooks/, etc.
-- ✅ Code should be clean, readable, and pass ESLint checks
-- ✅ Default to accessibility and responsiveness
+```bash
+npx shadcn@latest init
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+``` 
 
-## Do Not
+4. Copy the official Monark shadcn-ui theme from https://github.com/monark-community/website/blob/main/app/globals.scss
 
-- ❌ Use JavaScript (TypeScript only)
-- ❌ Use pages/ directory or old Next.js patterns
-- ❌ Use CSS modules, SCSS, or styled-components
-- ❌ Use generic UI kits like Bootstrap or MUI
-- ❌ Hardcode any environment-specific values
+5. Create `.env.example` and `.env` files with an example config
